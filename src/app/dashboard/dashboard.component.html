@@ -1,0 +1,11 @@
+<mat-grid-list [cols]="cols$ | async" rowHeight="70px">
+    <mat-grid-tile>
+        <mat-card class="card" [routerLink]="'user'">Customers({{Model.total_customer}})</mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="card">Products({{Model.total_product}})</mat-card>
+    </mat-grid-tile>
+
+  
+
+

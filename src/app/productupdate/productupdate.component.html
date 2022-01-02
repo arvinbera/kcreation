@@ -1,0 +1,33 @@
+<form (ngSubmit)="UpdateProduct()">
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Product Name</mat-label>
+        <input matInput placeholder="Product Name" name="product_name" [(ngModel)]="Model.product_name" value="{{Model.product_name}}">
+        <mat-icon matSuffix>book</mat-icon>
+      </mat-form-field>
+    </p>  
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Amount</mat-label>
+        <input matInput placeholder="Amount" name="amount" [(ngModel)]="Model.amount">
+        <mat-icon matSuffix>note</mat-icon>
+      </mat-form-field>
+    </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Select Category</mat-label>
+          <select matNativeControl required name="category" [(ngModel)]="Model.category">
+            <option value="Men">Men</option>
+            <option value="Women">Women</option>
+          </select>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Price</mat-label>
+          <input matInput placeholder="Price" name="price" [(ngModel)]="Model.price">
+          <mat-icon matSuffix>payment</mat-icon>
+        </mat-form-field>
+      </p>
+      <button mat-raised-button color="primary">Add Product</button>
+    </form>

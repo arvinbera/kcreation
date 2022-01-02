@@ -1,0 +1,13 @@
+.card{
+    width: 80%;
+    background-color: blue;
+    color: cornsilk;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+
+.card :hover {
+color: red;
+}

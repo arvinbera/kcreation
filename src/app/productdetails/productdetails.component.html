@@ -1,0 +1,26 @@
+<p></p>
+
+
+{{Model.product_name}}
+<br>
+{{Model.price}}
+<br>
+{{Model.amount}}
+<form (ngSubmit)="UploadSingleImage()">
+
+ <input type="file" #fileInput id="uploadFile"  name="uploadFile" 
+      accept="image/*" (change)="SetSingleImage($event)" />
+
+ <button mat-raised-button color="primary">Upload</button>
+</form>
+Main Image
+<img mat-card-image src="{{Model.product_image_url}}" alt="Photo of a Shiba Inu">
+<form (ngSubmit)="UploadMultipleImage()">
+
+    <input type="file" #fileInput id="uploadFile"  name="uploadFile"
+        multiple accept="image/*" (change)="SetMultiImage($event)" />
+   
+    <button mat-raised-button color="primary">Upload</button>
+   </form>
+ <!-- <table mat-table [dataSource]="Model.List" class="mat-elevation-z8">
+</table>  -->
